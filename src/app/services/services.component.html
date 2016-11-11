@@ -1,0 +1,203 @@
+<!-- banner -->
+<div class="banner">
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+
+					<h1><a class="navbar-brand"><span>T</span>eaching</a></h1>
+
+				</div>
+
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--shylock">
+						<div class="agileinfo_social_icons">
+							<ul class="agileinfo_social_icons1">
+								<li>
+									<a href="#" class="facebook"></a>
+								</li>
+								<li>
+									<a href="#" class="twitter"></a>
+								</li>
+								<li>
+									<a href="#" class="google"></a>
+								</li>
+								<!--<li>
+									<a href="#" class="pinterest"></a>
+								</li>-->
+							</ul>
+						</div>
+
+
+
+						<app-navigation></app-navigation>
+
+						<div class="clearfix"> </div>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="w3agile_banner_info">
+		<div class="container">
+			<h3>{{coverHeading}}</h3>
+			<a>{{coverDesc}}</a>
+		</div>
+	</div>
+
+</div>
+<!-- //banner -->
+<!-- services -->
+<div class="services">
+	<div class="container">
+		<!--<h3 class="head head_services">S<span>we are giving special <i>Services</i></span></h3>-->
+		<h3 class="head head_services">S<span>{{serviceMainHeading}}</span></h3>
+		<div class="agileinfo_services_grids">
+			<div class="col-md-4 agileinfo_services_grid">
+				<div class="agileinfo_services_grid1">
+					<!--<span class="glyphicon glyphicon-book" aria-hidden="true"></span>-->
+					<h4>{{serviceHeading1}}</h4>
+					<p>{{servicePara1}}</p>
+				</div>
+			</div>
+			<div class="col-md-4 agileinfo_services_grid">
+				<div class="agileinfo_services_grid1">
+					<!--<span class="glyphicon glyphicon-print" aria-hidden="true"></span>-->
+					<h4>{{serviceHeading2}}</h4>
+					<p>{{servicePara1}}</p>
+				</div>
+			</div>
+			<div class="col-md-4 agileinfo_services_grid">
+				<div class="agileinfo_services_grid1">
+					<!--<span class="glyphicon glyphicon-link" aria-hidden="true"></span>-->
+					<h4>{{serviceHeading3}}</h4>
+					<p>{{servicePara1}}</p>
+				</div>
+			</div>
+			<!--<div class="col-md-4 agileinfo_services_grid">
+				<div class="agileinfo_services_grid1">
+					<span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
+					<h4>Fusce ligula vel sapien</h4>
+					<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, sed suscipit turpis diam eget nisl.</p>
+				</div>
+			</div>
+			<div class="col-md-4 agileinfo_services_grid">
+				<div class="agileinfo_services_grid1">
+					<span class="glyphicon glyphicon-bed" aria-hidden="true"></span>
+					<h4>Nullam turpis fringilla</h4>
+					<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, sed suscipit turpis diam eget nisl.</p>
+				</div>
+			</div>
+			<div class="col-md-4 agileinfo_services_grid">
+				<div class="agileinfo_services_grid1">
+					<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+					<h4>Integer venenatis lobortis</h4>
+					<p>Quisque consectetur, sem id sagittis sodales, augue diam consequat mi, sed suscipit turpis diam eget nisl.</p>
+				</div>
+			</div>-->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //services -->
+<!-- services-bottom -->
+<div class="services-bottom">
+	<div class="container">
+		<div class="col-md-6 w3agile_services_bottom_grid">
+		</div>
+		<div class="col-md-6 w3agile_services_bottom_grid">
+			<h3>{{mailHeading}}</h3>
+			<p>{{mailContent}}</p>
+			<div class="more">
+				<a [href]="mailtoAddress" class="hvr-bounce-to-bottom">Mail Us</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //services-bottom -->
+<!-- newsletter -->
+<!--<div class="newsletter">
+	<div class="container">
+		<div class="col-md-7 w3ls_newsletter_left">
+			<h3>N<span>Subscribe to our newsletter</span></h3>
+			<p>Suspendisse lacinia rutrum tincidunt.</p>
+		</div>
+		<div class="col-md-5 w3ls_newsletter_right">
+			<form action="#" method="post">
+				<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
+					required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>-->
+<!-- //newsletter -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="col-md-4 w3l_footer_grid">
+			<h2><a><span>T</span>eaching</a></h2>
+			<p>{{footerMsg}}</p>
+		</div>
+		<div class="col-md-3 w3l_footer_grid">
+			<h3>Address</h3>
+			<ul class="w3_address">
+				<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>{{address}} <span>{{city}}</span></li>
+				<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a [href]="email">{{email}}</a></li>
+				<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>{{fone}}</li>
+			</ul>
+		</div>
+		<!--<div class="col-md-2 w3l_footer_grid">
+			<h3>Navigation</h3>
+			<ul class="agileinfo_footer_grid_nav">
+				<li><a href="services.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Services</a></li>
+				<li><a href="portfolio.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Portfolio</a></li>
+				<li><a href="short-codes.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Short Codes</a></li>
+				<li><a href="mail.html"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>Mail Us</a></li>
+			</ul>
+		</div>-->
+		<div class="col-md-3 w3l_footer_grid">
+			<h3>Social Media</h3>
+			<ul class="agileinfo_social_icons1 agileinfo_social">
+				<li>
+					<a class="facebook"></a>
+				</li>
+				<li>
+					<a class="twitter"></a>
+				</li>
+				<li>
+					<a class="google"></a>
+				</li>
+				<!--<li>
+					<a class="pinterest"></a>
+				</li>-->
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+		<!--<div class="w3agile_footer_copy">
+			<p>© 2016 Teaching. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+		</div>-->
+	</div>
+</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
